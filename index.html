@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+		<title>Which MOVIE is it, anyway?</title>
+		
+		<!-- Import materialize + material CSS -->
+		<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+		<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+		
+		<!-- Import jQuery before materialize.js -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		
+		<!-- Including my jQuery -->
+		<script src="myJavascript.js"></script>
+	</head>
+	
+	<body>
+		
+		<!-- NAVBAR -->
+		<nav class="indigo darken-2" role="navigation">
+			<div class="nav-wrapper container">
+				<a href="https://students.ics.uci.edu/~garciad7/project_cs237/cool.html" class="brand-logo center">Which MOVIE is it, anyway?</a>
+			</div>
+		</nav>
+		
+		
+		<!-- DESCRIPTION -->
+		<div class="section no-pad-bot" id="index-banner">
+			<div class="container">
+				<br><br>
+				<h1 class="header center  indigo-text text-accent-2">
+					<i class="mdi-maps-local-movies"></i>
+					Looking for a movie?
+					<i class="mdi-maps-local-movies"></i>
+				</h1>
+				<div class="row center">
+					<h5 class="header col s12 light">Let us help! Try the search engine below <i class="mdi-action-thumb-up"></i></h5>
+				</div>
+				<!--<div class="row center">
+					<a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+					</div>-->
+				<br><br>
+			</div>
+		</div>
+		
+		
+		<!-- SEARCH BOX -->
+		<div class="container">
+			<div class="section">
+				<div class="row">
+					<div class="input-field col s9">
+						<input id="query" type="text" name="searchbox">
+						<label for="search">Movie Title</label>
+					</div>
+
+					<div class="col s3">
+						</br>
+						<button onclick="search_movie()" class="waves-effect waves-light btn indigo accent-2" type="submit">
+						SEARCH &nbsp <i class="mdi-action-search"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- RESULTS -->
+		<div class="container">
+			<div class="results" id="search_results">
+			</div>
+		</div>		
+		
+
+		<!-- FOOTER -->
+		<footer class="page-footer red accent-4">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col l6 s12">
+						<h5 class="white-text">Project Information</h5>
+						<p class="grey-text text-lighten-4">We are a team of college students working on this project for the CS237 (Middleware for Distributed Systems) at the University of California, Irvine. </p>
+					</div>
+					
+					<div class="col l3 s12">
+						<h5 class="white-text"><i class="mdi-social-school"></i> &nbsp UC Irvine</h5>
+						<ul>
+							<li><a class="white-text" href="http://www.ics.uci.edu/">ICS Department</a></li>
+							<li><a class="white-text" href="http://www.ics.uci.edu/~cs237/">CS237</a></li>
+						</ul>
+					</div>
+					
+					<div class="col l3 s12">
+						<h5 class="white-text"><i class="mdi-action-toc"></i> &nbsp Databases</h5>
+						<ul>
+							<li><a class="white-text" href="http://developer.rottentomatoes.com/">Rotten Tomatoes</a></li>
+							<li><a class="white-text" href="https://developers.google.com/books/">Google Books</a></li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="footer-copyright">
+				<div class="container">
+					© 2015 Made by <span class="red-text text-lighten-3">  David García Santacruz</span>
+				</div>
+			</div>
+		</footer>
+		
+		<!--  Scripts-->
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="js/materialize.js"></script>
+		<script src="js/init.js"></script>
+	</body>
+</html>
